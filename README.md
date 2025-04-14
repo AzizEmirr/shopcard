@@ -11,7 +11,7 @@ To get started with the project, follow the steps below:
 First, clone the project to your local machine:
 
 ```bash
-git clone https://github.com/yourusername/project-name.git
+git clone https://github.com/AzizEmirr/shopcard.git
 cd project-name
 ```
 
