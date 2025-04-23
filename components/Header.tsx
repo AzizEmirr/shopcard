@@ -1,6 +1,6 @@
 import React from "react";
-import Container from "../shared/Container";
-import Logo from "../shared/Logo";
+import Container from "./Container";
+import Logo from "./Logo";
 import HeaderMenu from "./HeaderMenu";
 import SearchBar from "./SearchBar";
 import Carticon from "./Carticon";
@@ -15,7 +15,7 @@ const Header = async () => {
   return (
     <header className="bg-white/70 py-5 sticky top-0 z-50 backdrop-blur-md">
       <Container className="flex items-center justify-between text-lightColor">
-        <div className="w-auto flex items-center gap-2.5 justify-start md:w-1/5">
+        <div className="w-auto flex items-center justify-start md:w-1/5 md:gap-0 gap-2.5">
           <MobileMenu />
           <Logo />
         </div>

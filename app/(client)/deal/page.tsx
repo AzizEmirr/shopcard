@@ -1,5 +1,5 @@
-import ProductCard from "@/components/home/product/ProductCard";
-import Container from "@/components/shared/Container";
+import ProductCard from "@/components/ProductCard";
+import Container from "@/components/Container";
 import { Title } from "@/components/ui/text";
 import { getDealProducts } from "@/sanity/queries";
 import React from "react";
@@ -9,7 +9,7 @@ const DealPage = async () => {
   return (
     <div className="py-10 bg-deal-bg">
       <Container>
-        <Title className="mb-5 underline underline-offset-4 decoration-[1px] text-base md:text-sm uppercase tracking-wide">
+        <Title className="mb-5 underline underline-offset-4 decoration-[1px] text-base md:text-lg uppercase tracking-wide">
           Hot Deals of the Week
         </Title>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2.5">

@@ -1,11 +1,14 @@
 import React from "react";
-import Container from "@/components/shared/Container";
-import HomeBanner from "@/components/home/banner/HomeBanner";
-import PorductGrid from "@/components/home/product/PorductGrid";
-import HomeCategories from "@/components/home/categories/HomeCategories";
+import Container from "@/components/Container";
+
+import PorductGrid from "@/components/PorductGrid";
+
 import { getCategories } from "@/sanity/queries";
-import ShopByBrands from "@/components/home/brands/ShopByBrands";
-import LatestBlog from "@/components/home/blog/LatestBlog";
+
+import LatestBlog from "@/components/LatestBlog";
+import HomeBanner from "@/components/HomeBanner";
+import HomeCategories from "@/components/HomeCategories";
+import ShopByBrands from "@/components/ShopByBrands";
 
 const Home = async () => {
   const categories = await getCategories(6);

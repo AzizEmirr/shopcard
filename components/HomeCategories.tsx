@@ -1,9 +1,11 @@
 import React from "react";
-import { Title } from "../../ui/text";
 import { Category } from "@/sanity.types";
 import { urlFor } from "@/sanity/lib/image";
 import Image from "next/image";
 import Link from "next/link";
+import { Title } from "./ui/text";
+
+
 
 const HomeCategories = ({ categories }: { categories: Category[] }) => {
   return (

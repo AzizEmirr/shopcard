@@ -6,8 +6,8 @@ import { Button } from "./ui/button";
 import { client } from "@/sanity/lib/client";
 import { AnimatePresence, motion } from "framer-motion";
 import { Loader2, ChevronDown, ChevronUp } from "lucide-react";
-import ProductCard from "./home/product/ProductCard";
-import NoProductAvailable from "./home/product/NoProductAvailable";
+import ProductCard from "./ProductCard";
+import NoProductAvailable from "./NoProductAvailable";
 
 interface Props {
   categories: Category[];

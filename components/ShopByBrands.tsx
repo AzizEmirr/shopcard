@@ -1,10 +1,10 @@
 import React from "react";
-import { Title } from "../../ui/text";
 import Link from "next/link";
 import { getAllBrands } from "@/sanity/queries";
 import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
 import { GitCompareArrows, Headset, ShieldCheck, Truck } from "lucide-react";
+import { Title } from "./ui/text";
 
 const extraData = [
   {
@@ -47,7 +47,7 @@ const ShopByBrands = async () => {
         {brands?.map((brand) => (
           <Link
             key={brand?._id}
-            href={`/brand/${brand?.slug?.current}`}
+            href={{ pathname: "/shop", query: { brand: brand?.slug?.current } }}
             className="bg-white h-24 flex items-center justify-center 
             rounded-md overflow-hidden hover:shadow-lg 
             hover:shadow-shop_dark_green/20 hoverEffect"

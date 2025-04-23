@@ -5,7 +5,7 @@ import Link from "next/link";
 import React from "react";
 import { FaTag, FaLeaf, FaFire } from "react-icons/fa";
 import AddToWishlistButton from "./AddToWishlistButton";
-import { Title } from "../../ui/text";
+import { Title } from "./ui/text";
 import { StarIcon } from "lucide-react";
 import PriceView from "./PriceView";
 import AddToCartButton from "./AddToCartButton";
@@ -23,8 +23,8 @@ const ProductCard = ({ product }: { product: Product }) => {
               width={700}
               height={700}
               className={`w-full h-64 object-contain overflow-hidden 
-        transition-transform bg-shop_light_bg hoverEffect 
-       ${product?.stock !== 0 ? "group-hover:scale-105" : "opacity-50"}`}
+              transition-transform bg-shop_light_bg hoverEffect 
+             ${product?.stock !== 0 ? "group-hover:scale-105" : "opacity-50"}`}
             />
           </Link>
         )}

@@ -1,9 +1,21 @@
-import React from 'react'
+import Container from "@/components/Container";
+import { Title } from "@/components/ui/text";
+import React from "react";
 
-const Blogpage = () => {
+const SingleBlogPage = async ({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) => {
+  const { slug } = await params;
   return (
-    <div>Blogpage</div>
-  )
-}
+    <div>
+      <Container>
+        <Title>Single Blog Page</Title>
+        <p>{slug}</p>
+      </Container>
+    </div>
+  );
+};
 
-export default Blogpage
+export default SingleBlogPage;
